@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backgrounds in html</title>
+
+    <style type="text/css">
+        #block {
+         width: 75%;
+         height: 500px;
+         padding: 5px;
+         margin: 10px;
+         border: 5px solid green;
+         /* background-color: yellow; */
+         background-image: url(Screenshot\ \(198\).png); 
+         background-repeat: round;  
+         /* background-position: center;      */
+        }
+        .text {
+            text-align: center center;
+        }
+        img {
+            opacity: 0.4;
+            border: 4px solid black;
+        }
+        img:hover {
+            opacity: 1.0;
+        }
+    </style>
+</head>
+<body>
+    <p>Background Of Box Model</p>
+    <div id="block" class="text" >
+        The CSS Box Model<br/>
+        In CSS, the term "box model" is used when talking about design and layout.<br/>
+        The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. The image below illustrates the box model:<br/>
+        Explanation of the different parts:
+
+           Content - The content of the box, where text and images appear
+           Padding - Clears an area around the content. The padding is transparent
+           Border - A border that goes around the padding and content
+           Margin - Clears an area outside the border. The margin is transparent
+    </div>
+    <p>Opacity</p>
+    <div>
+        <img src="bg.jpg" width="25%" height="25%">
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Basics</title>
+
+    <style type="text/css">
+        body {
+            background: pink;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        h1, h2, h3 {
+            color: tomato;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .blueboldtext {
+            font-size: small;
+            color: blue;
+            font-weight: bolder;
+        }
+        .largegreentext {
+            font-size: large;
+            color: green;
+            font-weight: 900;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        #main {
+            width: 80%;
+            border: 3px solid royalblue;
+            background: yellow;
+            color: tomato;
+            margin: 50px 0px 50px 30px;
+            padding: 30px 0px 30px 30px;
+        }
+    </style>
+    
+</head>
+<body>
+    <table width="100%" border="2" cellspacing="1" cellpadding="1">
+        <tr>
+            <td><h1>Heading </h1></td>                
+        </tr>
+        <tr>
+            <td class="blueboldtext">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, a quae. Quidem vel, excepturi repudiandae illo, unde autem nulla dolor, pariatur consequuntur tempora omnis maxime ipsam nobis veniam labore neque.
+            </td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="underline"><h2>Class Name</h2></td>                
+        </tr>
+        <tr>
+           <td>The class attribute is often used to point to a class name in a style sheet. It can also be used by a JavaScript to access and manipulate elements with the specific class name.<br />To create a class; write a period (.) character, followed by a class name. Then, define the CSS properties within curly braces {}:</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="underline"><h3>Span</h3></td>
+        </tr>
+        <tr>
+            <td><span class="largegreentext">The span tag</span>
+                 is an inline container used to mark up a part of a text, or a part of a document. The span tag is easily styled by CSS or manipulated with JavaScript using the class or id attribute. The span tag is much like the div element, but div is a block-level element and span is an inline element.</td>
+        </tr>
+        <tr>
+            <td class="underline"><h3>Division</h3></td>
+        </tr>
+        <tr>
+            <td>A div is a block-level element.<br/>The div tag defines a division or a section in an HTML document. The div tag is used as a container for HTML elements - which is then styled with CSS or manipulated with JavaScript. The div tag is easily styled by using the class or id attribute. Any sort of content can be put inside the div tag!<br />The div tag is used in HTML to make divisions of content in the web page like (text, images, header, footer, navigation bar, etc).</td>
+        </tr>
+        <tr>
+            <td class="underline"><h2>Id</h2></td>
+        </tr>
+        <tr>
+            <td>The id global attribute defines an identifier (ID) which must be unique in the whole document.The syntax for id is: write a hash character (#), followed by an id name.Its purpose is to identify the element when linking (using a fragment identifier), scripting, or styling (with CSS).</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+    <div id="main">This is a line of Text for division</div>
+</body>
+</html>

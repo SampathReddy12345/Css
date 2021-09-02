@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Web Page</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            line-height: 1.5em;
+        }
+        #header {
+            background: black;
+            height: 100px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #contentwrapper {
+            float: left;
+            width: 100%;
+        }
+        #contentcolumn {
+            margin: 0 230px 0 230px;
+        }
+        #leftcolumn {
+            float: left;
+            width: 230px;
+            margin-left: -100%;
+            background: #24C8FF;
+        }
+        #rightcolumn {
+            float: left;
+            width: 230px;
+            margin-left: -230px;
+            background: #FFFB00;
+        }
+        .innertext {
+            margin: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #5E5E5E;
+        }
+        #footer {
+             clear: left;  /* Cannot Float on Left */
+             width: 100%;
+             background: black;
+             color: #FFF;
+             font-family: Arial, Helvetica, sans-serif;
+             text-align: center;
+             padding: 4px;
+        }
+        /*   ### Navigation Bar ### */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+        }
+        li {
+            float: left;
+            border-right: 1px solid #bbb;
+        }
+        li:last-child {
+            border-right: none;
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover:not(.active) {
+            background-color: #808080;
+        }
+        .active {
+            background-color: #0099ff;
+        }
+        /* ##### Responsive Layout Css ##### */
+
+        @media (max-width: 840px) {  /* Drop Right Column Down */
+            #leftcolumn {
+                margin-left: -100%;
+            }
+            #rightcolumn {
+                float: none;
+                width: 100%;
+                margin-left: 0;
+                clear: both;
+            }
+            #contentcolumn {
+                margin-right: 0; /* Set Margin to LeftColumnWidth */
+            }
+        }
+        @media (max-width: 600px) {  /* Drop left Column Down */
+            #leftcolumn {
+                float: none;
+                width: 100%;
+                clear: both;
+                margin-left: 0;               
+            }
+            #contentcolumn {
+                margin-left: 0; /* Set Margin to LeftColumnWidth */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <ul style="display: inline;">
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div id="contentwrapper">
+            <div id="contentcolumn">
+                <div class="innertext">
+                    <b>Welcome!</b><br/>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa reiciendis error voluptates quia quod. Quaerat consequatur voluptatum magnam debitis alias corporis sunt ipsam, architecto quo atque, delectus modi placeat suscipit.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, necessitatibus. Culpa aspernatur eligendi ipsa distinctio neque at ipsam! Recusandae non voluptatibus consequuntur aliquam sequi neque quod corrupti, nam ea quidem?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, soluta nisi! Exercitationem temporibus dolores necessitatibus! Esse porro dolor vel praesentium nihil. Eos expedita minima eius cupiditate obcaecati, quaerat modi temporibus.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita maiores odit iste cupiditate velit est, maxime, nemo minima molestias aperiam perspiciatis ducimus eligendi provident culpa distinctio. Placeat omnis impedit necessitatibus!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit itaque nulla quisquam libero voluptatem unde nihil odio error laborum nam! Minus culpa esse, quam suscipit consequatur dolore unde saepe porro!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae vel saepe, at vitae non nihil sapiente amet cum praesentium iste repellendus officiis sed! Autem libero fugit voluptatem iste quas officiis!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ipsam temporibus nemo fugit, repellat nobis repudiandae facilis aliquam dignissimos unde quasi aperiam natus provident sequi vitae ea assumenda recusandae quas!
+                </div>
+            </div>
+        </div>        
+            <div id="leftcolumn">
+                <div class="innertext">
+                    <b>Left Column: <em>230px</em></b><br/>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nobis odio laudantium? Deleniti cumque obcaecati itaque ex rerum omnis nihil id fuga culpa perspiciatis! Fugit quam nam maiores id cum!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore fugiat quas, ea sed cum atque ipsum alias perferendis illum similique? Suscipit assumenda magnam aspernatur ex omnis voluptas qui natus laborum!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis voluptatum sint rerum quis exercitationem quas temporibus facilis reiciendis. Ipsam atque expedita odio autem, iusto sunt eaque pariatur deleniti officia reprehenderit.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos vero, officia, ducimus aspernatur nam esse suscipit, maiores commodi possimus optio impedit quidem explicabo aut rem placeat eaque vitae dolor itaque.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque odio quod voluptates rerum. Facilis, esse libero. Facilis autem aliquid, odio exercitationem accusantium repudiandae provident ea animi, iure commodi placeat velit!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum eveniet, laborum, amet quam ullam veritatis inventore placeat aliquam vel accusantium, provident nesciunt nam nulla! Excepturi esse aut porro impedit enim.
+                </div>
+            </div>
+            <div id="rightcolumn">
+                <div class="innertext">
+                    <b>Right Column: <em>230px</em></b><br/>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nobis odio laudantium? Deleniti cumque obcaecati itaque ex rerum omnis nihil id fuga culpa perspiciatis! Fugit quam nam maiores id cum!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore fugiat quas, ea sed cum atque ipsum alias perferendis illum similique? Suscipit assumenda magnam aspernatur ex omnis voluptas qui natus laborum!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis voluptatum sint rerum quis exercitationem quas temporibus facilis reiciendis. Ipsam atque expedita odio autem, iusto sunt eaque pariatur deleniti officia reprehenderit.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos vero, officia, ducimus aspernatur nam esse suscipit, maiores commodi possimus optio impedit quidem explicabo aut rem placeat eaque vitae dolor itaque.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque odio quod voluptates rerum. Facilis, esse libero. Facilis autem aliquid, odio exercitationem accusantium repudiandae provident ea animi, iure commodi placeat velit!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum eveniet, laborum, amet quam ullam veritatis inventore placeat aliquam vel accusantium, provident nesciunt nam nulla! Excepturi esse aut porro impedit enim.
+                </div>
+            </div>        
+        <div id="footer">Footer</div>
+    </div>
+</body>
+</html>
